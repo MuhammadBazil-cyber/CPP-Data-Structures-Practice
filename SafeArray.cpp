@@ -140,28 +140,3 @@ class SafeArray
         return out;
     }
 };
-
-
-int main() {
-    SafeArray a(5);
-    SafeArray b(5);
-
-    // Fill arrays
-    for (int i = 0; i < 5; i++) {
-        a[i] = i;
-        b[i] = i * 2;
-    }
-
-    SafeArray c = a + b;
-
-    cout << "Array A: " << a << endl;
-    cout << "Array B: " << b << endl;
-    cout << "Array C (A + B): " << c << endl;
-
-    if (a == b)
-        cout << "Arrays are equal" << endl;
-    else
-        cout << "Arrays are NOT equal" << endl;
-
-    return 0;
-}
